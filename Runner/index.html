@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Runner boliviano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Runner Boliviano</h1>
+      <p>corre por el Altiplano, Valles y Oriente</p>
+    </header>
+    <main id="menu_principal">
+      <div id="contenedor_juego">
+        <section id="instrucciones">
+          <h2>Instrucciones</h2>
+          <p>
+            Esquiva los obstáculos, recoge los objetos y llega al final de cada
+            región sin perder tus 3 vidas.
+          </p>
+          <p>
+            <strong>Controles:</strong> A / D o < / > para moverse, Espacio para
+            saltar. En celular usa los botones de abajo.
+          </p>
+        </section>
+        <section id="juego">
+          <canvas id="canvas" width="800" height="400"> </canvas>
+          <div id="mensaje"></div>
+          <nav id="navegacion">
+            <button id="btn_jugar">Jugar</button>
+            <button id="btn_pausa">Pausa</button>
+            <button id="btn_reiniciar">Reiniciar</button>
+          </nav>
+          <section id="seccion_controles">
+            <button id="btn_izq">◀</button>
+            <button id="btn_salto">Saltar</button>
+            <button id="btn_der">▶</button>
+          </section>
+        </section>
+        <aside id="panel_datos">
+          <p>🏆 Puntacion: <span id="txt_puntos">0</span></p>
+          <p>❤️ Vidas: <span id="txt_vidas">3</span></p>
+          <p>🏁 Nivel: <span id="txt_nivel">1</span></p>
+        </aside>
+      </div>
+    </main>
+    <footer>
+      <p>Proyecto Bimestral - Diseño y Programación Web I</p>
+    </footer>
+    <script src="js/codigo.js"></script>
+  </body>
+</html>
